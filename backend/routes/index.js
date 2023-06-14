@@ -47,11 +47,9 @@ router.delete('/blog/:id', auth, blogController.delete);
 // create comment
 router.post('/comment', auth, commentController.create);
 
-
 // get comments by blog id
 router.get('/comment/:id', auth, commentController.getById);
 
 // delete comment
-
 
 module.exports = router;
